@@ -1,9 +1,7 @@
 
 ## TO DO
-separate themed styles from bootstrap styles
 add lab, lecture icons
 add search page
-add color coded full class list
 add button to remind me if someone drops
 add accordion behavior on panels http://getbootstrap.com/javascript/#collapse-options
 add the real portal.azure nav system

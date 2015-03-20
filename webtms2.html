@@ -14,7 +14,7 @@
     <!-- Bootstrap core CSS 24 column bootstrap -->
 
     <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="theme.css" rel="stylesheet">
+    <link href="themes.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/navbar/navbar.css" rel="stylesheet">
@@ -76,6 +76,21 @@
         .panel {
             margin-bottom: 10px;
             box-shadow: none;
+        }
+        .full-class {
+            background-color: rgba(240, 168, 12, 0.3);
+        }
+        .full-class:hover {
+            background-color: rgba(240, 168, 12, 0.4);
+        }
+        .available-class {
+            background-color: rgba(18,210, 113, 0.5);
+        }
+        .available-class:hover {
+            background-color: rgba(18,210, 113, 0.6);
+        }
+        tr.active.available-class {
+            background-color: rgba(200, 200, 200, 0.5);
         }
 
 
@@ -266,318 +281,403 @@
                         </tr>
                         </thead>
                     <tbody>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 101</td>
                         <td>Studio 1-A</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
                         <td>Jason T Austin</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 104</td>
                         <td>Studio 2-B</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
                         <td>Jacklynn N Niemiec</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 111</td>
                         <td>Studio 1-1</td>
                         <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">06:00pm - 08:50pm</div></div></td>
                         <td>Jacklynn N Niemiec</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 121</td>
                         <td>Studio 2-1</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">07:00pm - 09:50pm</div></div></td>
                         <td>Paul J Salvaggio</td>
                     </tr>
-                    <tr class="active">
+                    <tr class="active available-class">
                         <td>ARCH 131</td>
                         <td>Arch Represent I</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Laura B Sullivan</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 141</td>
                         <td>Architecture and Society I</td>
                         <td><div class="row"><div class="col-xs-8">T</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>John Doeley</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 143</td>
                         <td>Architecture and Society III</td>
                         <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Charles A Capaldi</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 161</td>
                         <td>Architectural Construction</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">07:00pm - 09:50pm</div></div></td>
                         <td>Adam N Hayes</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 192</td>
                         <td>Studio 1-2</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Simon J Tickell</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 231</td>
                         <td>Environmental Systems I</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">06:00pm - 08:50pm</div></div></td>
                         <td>Kelly F Vresilovic</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 241</td>
                         <td>Studio 4-1</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
                         <td>Robert M Piasecki</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 261</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Jon P Coddington</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 271</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Nancy R Trainer</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 273</td>
                         <td>Sustainable Built Env II</td>
                         <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Stanley Williams</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 320</td>
                         <td>Professional Practice I</td>
                         <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Micheal T Chen</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 335</td>
                         <td>Theories of Architecture I</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Lancy King II</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 341</td>
                         <td>History of Modern Arch I</td>
                         <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Tanter M Banter</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 344</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Jean Matt</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 351</td>
                         <td>Studio 5-1</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Bill J. Gates</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 361</td>
                         <td>Studio 6-1</td>
                         <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Myles C Munroe</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 375</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Nancy R Trainer</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 431</td>
                         <td>Architectural Programming</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Micheal Jackson</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 491</td>
                         <td>ST: Senior Project</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>T. D. Jakes</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 496</td>
                         <td>ST: Senior Project</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Jack M Bawar</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 241</td>
                         <td>Studio 4-1</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
                         <td>Robert M Piasecki</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 261</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Jon P Coddington</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 271</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Nancy R Trainer</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 273</td>
                         <td>Sustainable Built Env II</td>
                         <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Stanley Williams</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 320</td>
                         <td>Professional Practice I</td>
                         <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Micheal T Chen</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 335</td>
                         <td>Theories of Architecture I</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Lancy King II</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 341</td>
                         <td>History of Modern Arch I</td>
                         <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Tanter M Banter</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 344</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Jean Matt</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 351</td>
                         <td>Studio 5-1</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Bill J. Gates</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 361</td>
                         <td>Studio 6-1</td>
                         <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Myles C Munroe</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 375</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Nancy R Trainer</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 431</td>
                         <td>Architectural Programming</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Micheal Jackson</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 491</td>
                         <td>ST: Senior Project</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>T. D. Jakes</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 496</td>
                         <td>ST: Senior Project</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Jack M Bawar</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 241</td>
                         <td>Studio 4-1</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
                         <td>Robert M Piasecki</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 261</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Jon P Coddington</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 271</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Nancy R Trainer</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 273</td>
                         <td>Sustainable Built Env II</td>
                         <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Stanley Williams</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 320</td>
                         <td>Professional Practice I</td>
                         <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Micheal T Chen</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 335</td>
                         <td>Theories of Architecture I</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Lancy King II</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 341</td>
                         <td>History of Modern Arch I</td>
                         <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Tanter M Banter</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 344</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Jean Matt</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 351</td>
                         <td>Studio 5-1</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
                         <td>Bill J. Gates</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 361</td>
                         <td>Studio 6-1</td>
                         <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Myles C Munroe</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 375</td>
                         <td>Mat & Structural Behavior I</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Nancy R Trainer</td>
                     </tr>
-                    <tr>
+                    <tr class="available-class">
                         <td>ARCH 431</td>
                         <td>Architectural Programming</td>
                         <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
                         <td>Micheal Jackson</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 491</td>
                         <td>ST: Senior Project</td>
                         <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>T. D. Jakes</td>
                     </tr>
-                    <tr>
+                    <tr class="full-class">
                         <td>ARCH 496</td>
                         <td>ST: Senior Project</td>
                         <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
                         <td>Jack M Bawar</td>
                     </tr>
+                    <tr class="full-class">
+                        <td>ARCH 241</td>
+                        <td>Studio 4-1</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
+                        <td>Robert M Piasecki</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 261</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jon P Coddington</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 271</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
+                    </tr>
+                    <tr class="available-class">
+                        <td>ARCH 273</td>
+                        <td>Sustainable Built Env II</td>
+                        <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Stanley Williams</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 320</td>
+                        <td>Professional Practice I</td>
+                        <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal T Chen</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 335</td>
+                        <td>Theories of Architecture I</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Lancy King II</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 341</td>
+                        <td>History of Modern Arch I</td>
+                        <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Tanter M Banter</td>
+                    </tr>
+                    <tr class="available-class">
+                        <td>ARCH 344</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jean Matt</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 351</td>
+                        <td>Studio 5-1</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Bill J. Gates</td>
+                    </tr>
+                    <tr class="available-class">
+                        <td>ARCH 361</td>
+                        <td>Studio 6-1</td>
+                        <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Myles C Munroe</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 375</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
+                    </tr>
+                    <tr class="available-class">
+                        <td>ARCH 431</td>
+                        <td>Architectural Programming</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal Jackson</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 491</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>T. D. Jakes</td>
+                    </tr>
+                    <tr class="full-class">
+                        <td>ARCH 496</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Jack M Bawar</td>
+                    </tr>
+
                     </tbody>
                     </table>
                                 </div>
