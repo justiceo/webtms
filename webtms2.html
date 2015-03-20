@@ -122,12 +122,6 @@
             background-color: rgba(200, 200, 200, 0.5);
         }
 
-        /*table td, table th
-        {
-            text-align: center;
-            vertical-align: middle;
-        }*/
-
     </style>
     <!-- take scripts to bottom when you're done -->
     <script src="./webtms2_files/jquery.min.js"></script>
@@ -139,8 +133,6 @@
                 fixLayout();
             });
         });
-
-
 
         function fixLayout() {
             var lg_width = 1200;
@@ -178,11 +170,8 @@
                 var offset = $("#collapseCourses").offset();
                 var e_height = window_height - offset.top;
                 $("#collapseCourses").height(e_height - 20);
+                $("#collapseDetails").height(e_height - 20);
             }
-
-            var d_offset = $("#collapseDetails").offset();
-            var d_height = window_height - d_offset.top;
-            $("#collapseDetails").height(d_height - 20);
 
         }
 
