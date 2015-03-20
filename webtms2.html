@@ -9,9 +9,10 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Navbar Template for Bootstrap</title>
+    <title>Rethinking WebTms</title>
 
     <!-- Bootstrap core CSS 24 column bootstrap -->
+
     <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -40,7 +41,6 @@
         * {
             border-radius: 0 !important;
         }
-        
         .scroll {
             overflow: auto;
         }
@@ -68,10 +68,10 @@
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
         }
 
-
         body {
             padding-top: 0;
             padding-bottom: 0;
+            background: url("webtms2_files/bg2.jpg");
         }
         .no-padding {
             padding: 0 0 0 0;
@@ -87,6 +87,46 @@
         #collapseCourses .table-bordered {
             border-width: 0;
         }
+
+        .panel, .list-group-item {
+            background: rgba(100, 100, 100, 0.4);
+            color: white;
+        }
+        .panel-default .panel-heading {
+            background: rgba(100, 100, 100, 0.8);
+            color: white;
+        }
+
+        .panel-heading a {
+            color: white;
+        }
+
+        .panel, .panel .list-group-item  {
+            border-color: rgba(200, 200, 200, 0.4);
+
+        }
+
+        .panel .list-group-item:hover, .panel .list-group-item.active, tr:hover, tr.active {
+            background-color: rgba(200, 200, 200, 0.5);
+        }
+
+        .navbar-default {
+            background-color: rgba(100, 100, 100, 0.7);
+        }
+
+        .navbar-default .navbar-nav li a, .navbar-default .navbar-brand {
+            color: white;
+        }
+
+        .table>tbody>tr.active>td {
+            background-color: rgba(200, 200, 200, 0.5);
+        }
+
+        /*table td, table th
+        {
+            text-align: center;
+            vertical-align: middle;
+        }*/
 
     </style>
     <!-- take scripts to bottom when you're done -->
@@ -197,21 +237,26 @@
 
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
-                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseCollege" aria-expanded="true" aria-controls="collapseCollege"> college list </a></div>
+                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseCollege" aria-expanded="true" aria-controls="collapseCollege"> Colleges / Schools </a></div>
 
                         <div id="collapseCollege" class="panel-body scroll no-padding collapse in">
                         <!-- List group -->
                         <ul class="list-group">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item active">Antionette Westphal COMAD</li>
+                            <li class="list-group-item">Arts and Sciences</li>
+                            <li class="list-group-item">Bennett S. LeBow Coll. of Bus.</li>
+                            <li class="list-group-item">Center for Civic Engagement</li>
+                            <li class="list-group-item">Close Sch of Entrepreneurship</li>
+                            <li class="list-group-item">College of Computing & Informatics</li>
+                            <li class="list-group-item">College of Engineering</li>
+                            <li class="list-group-item">Hospitality & Sports Management</li>
+                            <li class="list-group-item">Miscellaneous</li>
+                            <li class="list-group-item">Nursing & Health Professions</li>
+                            <li class="list-group-item">Pennoni Honors College</li>
+                            <li class="list-group-item">Sch of Biomed Engr, Sci & Hlth</li>
+                            <li class="list-group-item">School of Education</li>
+                            <li class="list-group-item">School of Public Health</li>
+                            <li class="list-group-item">School of Tech & Prof Studies</li>
                         </ul>
                             </div>
                     </div>
@@ -221,25 +266,39 @@
 
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
-                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseSubjects" aria-expanded="true" aria-controls="collapseSubjects">major list</a></div>
+                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseSubjects" aria-expanded="true" aria-controls="collapseSubjects">Subjects of Antoinette Westphal COMAD</a></div>
                         <!-- List group -->
                         <div id="collapseSubjects" class="panel-body scroll no-padding collapse in">
                         <ul class="list-group">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Morbi leo risus</li>
-                            <li class="list-group-item">Porta ac consectetur ac</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
+                            <li class="list-group-item">Animation</li>
+                            <li class="list-group-item active">Architecture</li>
+                            <li class="list-group-item">Art History</li>
+                            <li class="list-group-item">Arts Administration</li>
+                            <li class="list-group-item">Dance</li>
+                            <li class="list-group-item">Design & Merchandising</li>
+                            <li class="list-group-item">Digital Media</li>
+                            <li class="list-group-item">Entertainment & Arts Management</li>
+                            <li class="list-group-item">Fashion Design</li>
+                            <li class="list-group-item">Film & Video</li>
+                            <li class="list-group-item">Film Studies</li>
+                            <li class="list-group-item">Game Art and Production</li>
+                            <li class="list-group-item">Graphic Design</li>
+                            <li class="list-group-item">Interior Design</li>
+                            <li class="list-group-item">Museum Leadership</li>
+                            <li class="list-group-item">Music</li>
+                            <li class="list-group-item">Music Industry Program</li>
+                            <li class="list-group-item">Photography</li>
+                            <li class="list-group-item">Product Design</li>
+                            <li class="list-group-item">Screenwriting & Playwriting</li>
+                            <li class="list-group-item">TV Industry & Enterprise</li>
+                            <li class="list-group-item">TV Production</li>
+                            <li class="list-group-item">Television Management</li>
+                            <li class="list-group-item">Theatre</li>
+                            <li class="list-group-item">University-Wide Courses</li>
+                            <li class="list-group-item">Visual Studies</li>
+                            <li class="list-group-item">WEST Studies</li>
+                            <li class="list-group-item">Web & Motion Graphic Design</li>
+                            <li class="list-group-item">Web Development</li>
                         </ul>
                             </div>
                     </div>
@@ -247,152 +306,330 @@
                 <div class="col-sm-14 col-md-11 col-lg-10">
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
-                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseCourses" aria-expanded="true" aria-controls="collapseCourses">major list</a></div>
+                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseCourses" aria-expanded="true" aria-controls="collapseCourses">List of Courses for Architecture</a></div>
                         <div id="collapseCourses" class="panel-body scroll no-padding collapse in">
 
-                    <table class="table table-bordered">
+                    <table class="table">
                         <thead>
-                        <tr>
-                            <th data-field="id">Item ID</th>
-                            <th data-field="name">Item Name</th>
-                            <th data-field="price">Item Price</th>
+                        <tr class="text-center">
+                            <th data-field="id">Subj Code</th>
+                            <th data-field="name">Course Title</th>
+                            <th data-field="price"><div class="row"><div class="col-xs-8">Day</div><div class="col-xs-16">Time</div></div></th>
+                            <th data-field="price">Instructor</th>
                         </tr>
                         </thead>
                     <tbody>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 101</td>
+                        <td>Studio 1-A</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
+                        <td>Jason T Austin</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 104</td>
+                        <td>Studio 2-B</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
+                        <td>Jacklynn N Niemiec</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 111</td>
+                        <td>Studio 1-1</td>
+                        <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">06:00pm - 08:50pm</div></div></td>
+                        <td>Jacklynn N Niemiec</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 121</td>
+                        <td>Studio 2-1</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">07:00pm - 09:50pm</div></div></td>
+                        <td>Paul J Salvaggio</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr class="active">
+                        <td>ARCH 131</td>
+                        <td>Arch Represent I</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Laura B Sullivan</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 141</td>
+                        <td>Architecture and Society I</td>
+                        <td><div class="row"><div class="col-xs-8">T</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>John Doeley</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 143</td>
+                        <td>Architecture and Society III</td>
+                        <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Charles A Capaldi</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 161</td>
+                        <td>Architectural Construction</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">07:00pm - 09:50pm</div></div></td>
+                        <td>Adam N Hayes</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 192</td>
+                        <td>Studio 1-2</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Simon J Tickell</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 231</td>
+                        <td>Environmental Systems I</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">06:00pm - 08:50pm</div></div></td>
+                        <td>Kelly F Vresilovic</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 241</td>
+                        <td>Studio 4-1</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
+                        <td>Robert M Piasecki</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 261</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jon P Coddington</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 271</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 273</td>
+                        <td>Sustainable Built Env II</td>
+                        <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Stanley Williams</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 320</td>
+                        <td>Professional Practice I</td>
+                        <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal T Chen</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 335</td>
+                        <td>Theories of Architecture I</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Lancy King II</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 341</td>
+                        <td>History of Modern Arch I</td>
+                        <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Tanter M Banter</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 344</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jean Matt</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 351</td>
+                        <td>Studio 5-1</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Bill J. Gates</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 361</td>
+                        <td>Studio 6-1</td>
+                        <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Myles C Munroe</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 375</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 431</td>
+                        <td>Architectural Programming</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal Jackson</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 491</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>T. D. Jakes</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 496</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Jack M Bawar</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 241</td>
+                        <td>Studio 4-1</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
+                        <td>Robert M Piasecki</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 261</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jon P Coddington</td>
                     </tr>
-                    <tr id="tr_id_1" class="tr-class-1">
-                        <td id="td_id_1" class="td-class-1">course code</td>
-                        <td>sample course title here</td>
-                        <td>with the times</td>
+                    <tr>
+                        <td>ARCH 271</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 273</td>
+                        <td>Sustainable Built Env II</td>
+                        <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Stanley Williams</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 320</td>
+                        <td>Professional Practice I</td>
+                        <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal T Chen</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 335</td>
+                        <td>Theories of Architecture I</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Lancy King II</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 341</td>
+                        <td>History of Modern Arch I</td>
+                        <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Tanter M Banter</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 344</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jean Matt</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 351</td>
+                        <td>Studio 5-1</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Bill J. Gates</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 361</td>
+                        <td>Studio 6-1</td>
+                        <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Myles C Munroe</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 375</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 431</td>
+                        <td>Architectural Programming</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal Jackson</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 491</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>T. D. Jakes</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 496</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Jack M Bawar</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 241</td>
+                        <td>Studio 4-1</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
+                        <td>Robert M Piasecki</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 261</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">M</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jon P Coddington</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 271</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 273</td>
+                        <td>Sustainable Built Env II</td>
+                        <td><div class="row"><div class="col-xs-8">MF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Stanley Williams</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 320</td>
+                        <td>Professional Practice I</td>
+                        <td><div class="row"><div class="col-xs-8">WF</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal T Chen</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 335</td>
+                        <td>Theories of Architecture I</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Lancy King II</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 341</td>
+                        <td>History of Modern Arch I</td>
+                        <td><div class="row"><div class="col-xs-8">TR</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Tanter M Banter</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 344</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Jean Matt</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 351</td>
+                        <td>Studio 5-1</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">11:50am - 04:50pm</div></div></td>
+                        <td>Bill J. Gates</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 361</td>
+                        <td>Studio 6-1</td>
+                        <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Myles C Munroe</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 375</td>
+                        <td>Mat & Structural Behavior I</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Nancy R Trainer</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 431</td>
+                        <td>Architectural Programming</td>
+                        <td><div class="row"><div class="col-xs-8">F</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
+                        <td>Micheal Jackson</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 491</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>T. D. Jakes</td>
+                    </tr>
+                    <tr>
+                        <td>ARCH 496</td>
+                        <td>ST: Senior Project</td>
+                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">04:50pm - 04:50pm</div></div></td>
+                        <td>Jack M Bawar</td>
                     </tr>
                     </tbody>
                     </table>
@@ -402,37 +639,42 @@
                 <div class="col-sm-10 col-md-8 col-lg-7">
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
-                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseDetails" aria-expanded="true" aria-controls="collapseDetails">course details</a></div>
-                        <div id="collapseDetails" class="panel-body scroll no-padding collapse in">
-                            <p id="somestuff">Easily add a heading container to your panel with .panel-heading. You may also include any with a .panel-title class to add a pre-styled heading.
-                            For proper link coloring, be sure to place links in headings within .panel-title.</p>
+                        <div class="panel-heading"><a data-toggle="collapse" href="#collapseDetails" aria-expanded="true" aria-controls="collapseDetails">ARCH 131 - Arch Represent I</a></div>
+                        <div id="collapseDetails" class="panel-body scroll no-padding collapse in" style="padding: 0 20px 0 20px">
+                            <p style="padding-top: 20px">Introduces the basic skills of architectural representation through drawing, including drafted and freehand techniques in a variety of media. Also introduces techniques of digital documentation.</p>
                             <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th data-field="id">Item ID</th>
-                                    <th data-field="name">Item Name</th>
-                                </tr>
-                                </thead>
                                 <tbody>
                                 <tr  class="tr-class-1">
-                                    <td class="td-class-1">course code</td>
-                                    <td>sample course title here</td>
+                                    <td class="td-class-1">Subject Code</td>
+                                    <td>ARCH</td>
                                 </tr>
                                 <tr  class="tr-class-1">
-                                    <td class="td-class-1">course code</td>
-                                    <td>sample course title here</td>
+                                    <td class="td-class-1">Credits</td>
+                                    <td>3.00</td>
                                 </tr>
                                 <tr  class="tr-class-1">
-                                    <td class="td-class-1">course code</td>
-                                    <td>sample course title here</td>
+                                    <td class="td-class-1">Course Number</td>
+                                    <td>131</td>
                                 </tr>
                                 <tr  class="tr-class-1">
-                                    <td class="td-class-1">course code</td>
-                                    <td>sample course title here</td>
+                                    <td class="td-class-1">Instructor</td>
+                                    <td>Jacklynn N Niemiec</td>
                                 </tr>
                                 <tr  class="tr-class-1">
-                                    <td class="td-class-1">course code</td>
-                                    <td>sample course title here</td>
+                                    <td class="td-class-1">Instruction type</td>
+                                    <td>Lecture</td>
+                                </tr>
+                                <tr  class="tr-class-1">
+                                    <td class="td-class-1">Max Enroll</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr  class="tr-class-1">
+                                    <td class="td-class-1">Enroll</td>
+                                    <td>13</td>
+                                </tr>
+                                <tr  class="tr-class-1">
+                                    <td class="td-class-1">Times</td>
+                                    <td>Dec 09, 2014</td>
                                 </tr>
                                 </tbody>
                             </table>
