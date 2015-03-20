@@ -14,6 +14,7 @@
     <!-- Bootstrap core CSS 24 column bootstrap -->
 
     <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/navbar/navbar.css" rel="stylesheet">
@@ -29,6 +30,11 @@
     <![endif]-->
     <style>
 
+
+        body {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
         .row.no-gutters {
             margin-right: 0;
             margin-left: 0;
@@ -40,16 +46,13 @@
         }
         * {
             border-radius: 0 !important;
-        }
-        .scroll {
-            overflow: auto;
-        }
-
-        * {
             scrollbar: 4px;
             scrollbar-track-color: #fff;
             scrollbar-arrow-color: #eee;
             -ms-scroll-rails: none;
+        }
+        .scroll {
+            overflow: auto;
         }
         ::-webkit-scrollbar {
             width: 4px;
@@ -67,12 +70,6 @@
             border-radius: 4px;
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
         }
-
-        body {
-            padding-top: 0;
-            padding-bottom: 0;
-            background: url("webtms2_files/bg2.jpg");
-        }
         .no-padding {
             padding: 0 0 0 0;
         }
@@ -80,47 +77,8 @@
             margin-bottom: 10px;
             box-shadow: none;
         }
-        .list-group-item {
-            border-left-width: 0;
-            border-right-width: 0;
-        }
-        #collapseCourses .table-bordered {
-            border-width: 0;
-        }
 
-        .panel, .list-group-item {
-            background: rgba(100, 100, 100, 0.4);
-            color: white;
-        }
-        .panel-default .panel-heading {
-            background: rgba(100, 100, 100, 0.8);
-            color: white;
-        }
 
-        .panel-heading a {
-            color: white;
-        }
-
-        .panel, .panel .list-group-item  {
-            border-color: rgba(200, 200, 200, 0.4);
-
-        }
-
-        .panel .list-group-item:hover, .panel .list-group-item.active, tr:hover, tr.active {
-            background-color: rgba(200, 200, 200, 0.5);
-        }
-
-        .navbar-default {
-            background-color: rgba(100, 100, 100, 0.7);
-        }
-
-        .navbar-default .navbar-nav li a, .navbar-default .navbar-brand {
-            color: white;
-        }
-
-        .table>tbody>tr.active>td {
-            background-color: rgba(200, 200, 200, 0.5);
-        }
 
     </style>
     <!-- take scripts to bottom when you're done -->
