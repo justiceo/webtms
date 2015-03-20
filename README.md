@@ -15,3 +15,7 @@ add change background image
 make table border color same as others
 reduce general font size n color
 add inset shadow to scroll
+
+what would be the best way to represent full class? border | bg-color
+
+debug the layout javascript - don't do it now please!

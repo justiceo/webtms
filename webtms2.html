@@ -13,8 +13,12 @@
 
     <!-- Bootstrap core CSS 24 column bootstrap -->
 
-    <link href="bootstrap.min.css" rel="stylesheet">
+
     <link href="themes.css" rel="stylesheet">
+    <link href="icons.css" rel="stylesheet">
+    <link href="http://play.justiceo.com/app.min.cssy" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-24.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/navbar/navbar.css" rel="stylesheet">
@@ -29,8 +33,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-
-
         body {
             padding-top: 0;
             padding-bottom: 0;
@@ -75,22 +77,12 @@
         }
         .panel {
             margin-bottom: 10px;
-            box-shadow: none;
         }
         .full-class {
-            background-color: rgba(240, 168, 12, 0.3);
-        }
-        .full-class:hover {
-            background-color: rgba(240, 168, 12, 0.4);
+            border-left: 10px solid #f05050;
         }
         .available-class {
-            background-color: rgba(18,210, 113, 0.5);
-        }
-        .available-class:hover {
-            background-color: rgba(18,210, 113, 0.6);
-        }
-        tr.active.available-class {
-            background-color: rgba(200, 200, 200, 0.5);
+            border-left: 10px solid #27c24c;
         }
 
 
@@ -100,6 +92,12 @@
     <script src="./webtms2_files/jquery.min.js"></script>
 
     <script type="text/javascript">
+
+        var lg_width = 1200;
+        var md_width = 992;
+        var sm_width = 768;
+
+
         $(document).ready(function () {
             fixLayout();
             $( window ).resize(function() {
@@ -108,9 +106,6 @@
         });
 
         function fixLayout() {
-            var lg_width = 1200;
-            var md_width = 992;
-            var sm_width = 768;
 
             var current_width = $(window).width();
             var window_height = $(window).height();
@@ -119,7 +114,7 @@
                 $("#collapseCollege").collapse('hide');
             }
             else {
-                $("#collapseCollege").collapse('show');
+                $("#collapseCollege").collapse('show').height(window_height);
                 var offset = $("#collapseCollege").offset();
                 var e_height = window_height - offset.top;
                 $("#collapseCollege").height(e_height - 20);
@@ -137,6 +132,7 @@
 
             if( current_width < sm_width ) {
                 $("#collapseCourses").collapse('hide');
+                $("#collapseDetails").height('auto');
             }
             else {
                 $("#collapseCourses").collapse('show');
@@ -276,7 +272,7 @@
                         <tr class="text-center">
                             <th data-field="id">Subj Code</th>
                             <th data-field="name">Course Title</th>
-                            <th data-field="price"><div class="row"><div class="col-xs-8">Day</div><div class="col-xs-16">Time</div></div></th>
+                            <th data-field="price">Day/Time</th>
                             <th data-field="price">Instructor</th>
                         </tr>
                         </thead>
@@ -284,28 +280,28 @@
                     <tr class="full-class">
                         <td>ARCH 101</td>
                         <td>Studio 1-A</td>
-                        <td><div class="row"><div class="col-xs-8">MWF</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
-                        <td>Jason T Austin</td>
+                        <td>09:00am - 11:50am  MWF</td>
+                        <td>Jason T Austin<i title="lecture" class="icon-users pull-right"></i> </td>
                     </tr>
                     <tr class="full-class">
                         <td>ARCH 104</td>
                         <td>Studio 2-B</td>
-                        <td><div class="row"><div class="col-xs-8">MW</div><div class="col-xs-16">09:00am - 11:50am</div></div></td>
-                        <td>Jacklynn N Niemiec</td>
+                        <td>09:00am - 11:50am  MWF</td>
+                        <td>Jacklynn N Niemiec<i title="lab" class="icon-chemistry pull-right"></i> </td>
                     </tr>
                     <tr class="full-class">
                         <td>ARCH 111</td>
                         <td>Studio 1-1</td>
-                        <td><div class="row"><div class="col-xs-8">W</div><div class="col-xs-16">06:00pm - 08:50pm</div></div></td>
-                        <td>Jacklynn N Niemiec</td>
+                        <td>09:00am - 11:50am  MWF</td>
+                        <td>Jacklynn N Niemiec<i title="online" class="icon-screen-desktop pull-right"></i></td>
                     </tr>
                     <tr class="available-class">
                         <td>ARCH 121</td>
                         <td>Studio 2-1</td>
-                        <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">07:00pm - 09:50pm</div></div></td>
+                        <td>09:00am - 11:50am  MWF</td>
                         <td>Paul J Salvaggio</td>
                     </tr>
-                    <tr class="active available-class">
+                    <tr class="available-class bg-info">
                         <td>ARCH 131</td>
                         <td>Arch Represent I</td>
                         <td><div class="row"><div class="col-xs-8">R</div><div class="col-xs-16">02:00pm - 04:50pm</div></div></td>
