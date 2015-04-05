@@ -16,6 +16,6 @@ make table border color same as others
 reduce general font size n color
 add inset shadow to scroll
 
-what would be the best way to represent full class? border | bg-color
+what would be the best way to represent full class? border | bg-color | small red n green dots on far right
 
 debug the layout javascript - don't do it now please!
