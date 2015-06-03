@@ -33,6 +33,7 @@
         body {
             padding-top: 0;
             padding-bottom: 0;
+            height: auto;
         }
         .row.no-gutters {
             margin-right: 0;
@@ -81,7 +82,7 @@
 
             var imageN = 1;
             $("#bgChange").on('click', function() {
-                $('body').css('background-image', 'url(webtms2_files/bg' + imageN++ + '.jpg)');
+                $('body').css('background', 'url(webtms2_files/bg' + imageN++ + '.jpg) no-repeat fixed center');
                 imageN = imageN % 5;
                 console.log("imageN is " + imageN);
             });
@@ -763,6 +764,7 @@
     
 
     </div> <!-- /container -->
+    
 
 
     <!-- Bootstrap core JavaScript
